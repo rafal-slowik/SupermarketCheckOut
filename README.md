@@ -8,8 +8,8 @@ To check out the project use following command: <br />
 <br /><br />
 To build and run the tests you need to use Maven in version 3:<br />
 <b>mvn clean install site</b><br/><br/>
-The report can be found in following directory:<br />
-<b>projectDirectory/target/site</b>
+The report can be found in target/site directory of the project:<br />
+[Report ](target/site/index.html "report") 
 
 <h2>Recipe examples:</h2>
 
