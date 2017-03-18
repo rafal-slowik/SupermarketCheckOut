@@ -58,7 +58,7 @@ If there is a set of items with id = 1 [price: 1.89], 2 [price: 1.89] and 3 [pri
 <br><br>
 
 <b>4) For each N (equals) items X, the customer gets K items Y for free:</b><br>
-Example - For each 4 items with id = 1, the customer gets 3 items with id = 2 for free. The prices for the free items will calculated if they are present in the basket and were not applied to other price role/<br>
+Example - For each 4 items with id = 1, the customer gets 3 items with id = 2 for free. The prices of free items will be calculated if they are present in the basket and were not applied to other price rule<br>
 Usage: <b><i>IPriceRule rule = new BuyNItemsXGetMItemsY(1, 2, 4, 3);</i></b><br>
 <b>Case 1:</b><br>
 If there are 4 items with id = 1 and 3 items with id = 2 in the basket, which are not applied to other price rule yet, then they meet the criteria of current rule.
