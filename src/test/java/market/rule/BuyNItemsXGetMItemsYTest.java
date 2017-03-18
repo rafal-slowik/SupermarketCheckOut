@@ -20,7 +20,7 @@ import market.rule.impl.BuyNItemsXGetMItemsY;
  *
  */
 public class BuyNItemsXGetMItemsYTest extends TestUtils {
-	private BuyNItemsXGetMItemsY buy5ItemsId1Get3ItemsId2 = null;
+	private IPriceRule buy5ItemsId1Get3ItemsId2 = null;
 
 	@Before
 	public void init() {

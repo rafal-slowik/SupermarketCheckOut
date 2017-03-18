@@ -146,4 +146,10 @@ public class Item {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", realPrice=" + realPrice + ", normalPrice=" + normalPrice + ", itemName=" + itemName
+				+ "]";
+	}
 }

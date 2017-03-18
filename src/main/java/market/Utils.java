@@ -23,14 +23,13 @@ public class Utils {
 	private static String discount = "Discount";
 	private static String afterDiscount = "After Discount";
 
-	// 50 60
-	// 70
-
 	public static void printLine(Item item, StringBuilder builder, int lineNumber) {
 		int start = lineNumber * 100;
 		builder.append(spaces100);
 
-		builder.replace(start, start + item.getItemName().length(), item.getItemName());
+		String idAndName = "id=" + item.getId() + " " + item.getItemName();
+
+		builder.replace(start, start + idAndName.length(), idAndName);
 		start += 40;
 		builder.replace(start, start + getFormatedLength(item.getNormalPrice()), getFormated(item.getNormalPrice()));
 		start += 20;
@@ -65,7 +64,9 @@ public class Utils {
 
 	}
 
-	public static void printFooter(StringBuilder builder, BigDecimal total) {
+	public static void printFooter(StringBuilder builder, BigDecimal total, BigDecimal totalDiscount) {
+		builder.append(bottom100).append(System.lineSeparator());
+		builder.append("Total discount:   ").append(format.format(totalDiscount)).append(System.lineSeparator());
 		builder.append(bottom100).append(System.lineSeparator());
 		builder.append("Total:   ").append(format.format(total)).append(System.lineSeparator());
 	}

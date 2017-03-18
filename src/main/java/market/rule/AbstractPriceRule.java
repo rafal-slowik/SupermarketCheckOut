@@ -8,6 +8,7 @@ import java.util.List;
 import market.item.Item;
 
 /**
+ * 
  * @author Rafal Slowik
  * @date 17 Mar 2017
  *

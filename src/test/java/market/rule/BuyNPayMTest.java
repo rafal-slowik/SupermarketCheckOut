@@ -19,10 +19,10 @@ import market.rule.impl.BuyNPayM;
  */
 public class BuyNPayMTest extends TestUtils {
 
-	private BuyNPayM buy3Pay2Rule = null;
-	private BuyNPayM buy4Pay2Rule = null;
-	private BuyNPayM buy4Pay3Rule = null;
-	private BuyNPayM buy7Pay3Rule = null;
+	private IPriceRule buy3Pay2Rule = null;
+	private IPriceRule buy4Pay2Rule = null;
+	private IPriceRule buy4Pay3Rule = null;
+	private IPriceRule buy7Pay3Rule = null;
 
 	@Before
 	public void init() {

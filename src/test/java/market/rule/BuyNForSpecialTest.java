@@ -20,7 +20,7 @@ import market.rule.impl.BuyNForSpecial;
  */
 public class BuyNForSpecialTest extends TestUtils {
 
-	private BuyNForSpecial buy3For2_66EachRule = null;
+	private IPriceRule buy3For2_66EachRule = null;
 
 	@Before
 	public void init() {

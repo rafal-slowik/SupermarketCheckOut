@@ -1,0 +1,28 @@
+
+Item Name                               Normal Price        Discount            After Discount     
+---------------------------------------------------------------------------------------------------
+id=1 most expensive                     EUR3.22             EUR0.00             EUR3.22            
+id=2 medium expensive                   EUR3.00             EUR0.00             EUR3.00            
+id=3 cheapest                           EUR1.22             -EUR1.22            EUR0.00            
+id=4 item id 4                          EUR1.99             -EUR1.99            EUR0.00            
+id=4 item id 4                          EUR1.99             EUR0.00             EUR1.99            
+id=4 item id 4                          EUR1.99             EUR0.00             EUR1.99            
+id=4 item id 4                          EUR1.99             EUR0.00             EUR1.99            
+id=5 item id 5                          EUR5.99             -EUR4.66            EUR1.33            
+id=5 item id 5                          EUR5.99             -EUR4.66            EUR1.33            
+id=5 item id 5                          EUR5.99             EUR0.00             EUR5.99            
+id=6 item id 6                          EUR10.99            EUR0.00             EUR10.99           
+id=6 item id 6                          EUR10.99            EUR0.00             EUR10.99           
+id=6 item id 6                          EUR10.99            EUR0.00             EUR10.99           
+id=7 item id 7                          EUR0.99             -EUR0.99            EUR0.00            
+id=7 item id 7                          EUR0.99             -EUR0.99            EUR0.00            
+id=7 item id 7                          EUR0.99             EUR0.00             EUR0.99            
+id=8 item id 8                          EUR2.88             -EUR2.88            EUR0.00            
+id=8 item id 8                          EUR2.88             -EUR2.88            EUR0.00            
+id=8 item id 8                          EUR2.88             EUR0.00             EUR2.88            
+id=9 item id 9                          EUR2.89             EUR0.00             EUR2.89            
+id=9 item id 9                          EUR2.89             EUR0.00             EUR2.89            
+---------------------------------------------------------------------------------------------------
+Total discount:   -EUR20.27
+---------------------------------------------------------------------------------------------------
+Total:   EUR63.46

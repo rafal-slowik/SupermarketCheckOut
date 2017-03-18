@@ -28,10 +28,15 @@ public class BuyNPayM extends BuyNEqualItems {
 	private int payFor;
 
 	/**
+	 * Buy {@code buy} number of {@link Item} with the same {@code itemId} and then
+	 * pay for {@code payFor} items.
 	 * 
 	 * @param itemId
+	 *            - it of item
 	 * @param buy
-	 * @param pay
+	 *            - a number of items need to be buy
+	 * @param payFor
+	 *            - a number of items which will be paid
 	 */
 	public BuyNPayM(long itemId, int buy, int payFor) {
 		super(itemId, buy);

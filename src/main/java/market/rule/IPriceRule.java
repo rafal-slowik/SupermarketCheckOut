@@ -22,6 +22,14 @@ public interface IPriceRule {
 
 	Predicate<Item> selectionFilterPredicate();
 
+	/**
+	 * Filter all items which haven't been taken in any price rule yet and fit
+	 * other implemented criteria.
+	 * 
+	 * @param itemsToCheck
+	 *            - list of items to check.
+	 * @return filtered Items
+	 */
 	default List<Item> filterByCriteria(List<Item> itemsToCheck) {
 		return Optional.ofNullable(itemsToCheck).orElse(new ArrayList<>()).stream()
 				.filter(item -> !item.isUsedFlag() && (selectionFilterPredicate().test(item)))

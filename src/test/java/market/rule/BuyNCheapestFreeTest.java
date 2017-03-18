@@ -22,11 +22,11 @@ import market.rule.impl.BuyNCheapestFree;
  */
 public class BuyNCheapestFreeTest extends TestUtils {
 
-	private BuyNCheapestFree buy3ForCheapestFree = null;
+	private IPriceRule buy3ForCheapestFree = null;
 
 	@Before
 	public void init() {
-		buy3ForCheapestFree = new BuyNCheapestFree( new long[] { 1, 2, 3 });
+		buy3ForCheapestFree = new BuyNCheapestFree(new long[] { 1, 2, 3 });
 	}
 
 	@Test
@@ -89,7 +89,7 @@ public class BuyNCheapestFreeTest extends TestUtils {
 	@Test
 	public void negativeBuyItemsNbrRule1Test() {
 		try {
-			new BuyNCheapestFree(new long[] { });
+			new BuyNCheapestFree(new long[] {});
 			fail("IllegalArgumentException should be thrown");
 		} catch (Throwable t) {
 			if (t instanceof IllegalArgumentException == false) {

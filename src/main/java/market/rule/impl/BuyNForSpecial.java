@@ -28,10 +28,19 @@ public class BuyNForSpecial extends BuyNEqualItems {
 	private BigDecimal specialPrice;
 
 	/**
+	 * Buy {@code buy} of items with {@code itemId} and get each of that items
+	 * for {@code specialPrice}
 	 * 
 	 * @param itemId
+	 *            - id of the items
 	 * @param buy
+	 *            - number of items need to be buy
 	 * @param specialPrice
+	 *            - special price
+	 * 
+	 * @throws IllegalArgumentException
+	 *             when {@code buy} <= 0 or the {@code specialPrice} is null or
+	 *             0.
 	 */
 	public BuyNForSpecial(long itemId, int buy, BigDecimal specialPrice) {
 		super(itemId, buy);

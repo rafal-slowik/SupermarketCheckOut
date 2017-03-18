@@ -35,9 +35,15 @@ public class BuyNCheapestFree extends AbstractPriceRule {
 	private long[] itemIds;
 
 	/**
+	 * Buy set of items and get the cheapest one for free.
 	 * 
 	 * @param itemIds
-	 *            - ids of the items in the set
+	 *            - ids of the items in the set. All ids must be different and
+	 *            the length of the set must be > 1.
+	 * @throws IllegalArgumentException
+	 *             when {@code itemIds} equals {@code null}, is an empty set or
+	 *             number of item in it is <= 1, or item ids in the set are not
+	 *             different.
 	 */
 	public BuyNCheapestFree(long[] itemIds) {
 		checkPreconditions(itemIds);
@@ -47,8 +53,8 @@ public class BuyNCheapestFree extends AbstractPriceRule {
 	private void checkPreconditions(long[] itemIds) {
 		Preconditions.checkArgument(itemIds != null,
 				getConfigInstance().formatProperty("message.variable_must_not_be_null", "items list"));
-		Preconditions.checkArgument(itemIds.length > 0,
-				getConfigInstance().findByKey("message.nbr_of_special_priced_items_must_positive"));
+		Preconditions.checkArgument(itemIds.length > 1,
+				getConfigInstance().findByKey("message.nbr_in_set_must_be_greater_one"));
 		Set<Long> set = new HashSet<>();
 		for (Long key : itemIds) {
 			Preconditions.checkArgument(!set.contains(key),
