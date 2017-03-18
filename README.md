@@ -21,7 +21,7 @@ The report can be found in following directory:<br />
 
 [How to use the system ](src/test/java/market/CashRegisterServiceTest.java "CashRegisterServiceTest") 
 
-Be aware that the class src/test/java/market/CashRegisterServiceTest.java is rather demo of using than the test.
+Be aware that the class src/test/java/market/CashRegisterServiceTest.java is more demo of the usage than the test.
 
 <h2>There are implemented price rules which are flexible to use:</h2><br>
 <b>1) Buy N items and pay for M:</b><br>
