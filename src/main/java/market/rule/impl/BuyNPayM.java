@@ -60,7 +60,7 @@ public class BuyNPayM extends BuyNEqualItems {
 	public void processFilteredItems(List<Item> filteredItems) {
 		final AtomicInteger counter = new AtomicInteger(0);
 		final AtomicInteger reduceCounter = new AtomicInteger(0);
-		List<Item> listToOperate = Optional.of(filteredItems).orElse(new ArrayList<>());
+		List<Item> listToOperate = Optional.ofNullable(filteredItems).orElse(new ArrayList<>());
 		listToOperate.subList(0, (listToOperate.size() / buy) * buy).stream().forEach(item -> {
 			item.setUsedFlag(true);
 			if (counter.getAndIncrement() % buy == 0) {

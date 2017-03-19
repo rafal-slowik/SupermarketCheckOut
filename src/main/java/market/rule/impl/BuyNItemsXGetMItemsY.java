@@ -78,7 +78,7 @@ public class BuyNItemsXGetMItemsY extends BuyNEqualItems {
 	public void processFilteredItems(List<Item> filteredItems) {
 		final AtomicInteger counter = new AtomicInteger(0);
 		final AtomicInteger reduceCounter = new AtomicInteger(0);
-		List<Item> listToOperate = Optional.of(filteredItems).orElse(new ArrayList<>());
+		List<Item> listToOperate = Optional.ofNullable(filteredItems).orElse(new ArrayList<>());
 		long purchasedItems = listToOperate.stream().filter(it -> it.getId() == itemId).count();
 		if (purchasedItems < buy) {
 			return;
