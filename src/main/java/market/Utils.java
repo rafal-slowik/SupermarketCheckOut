@@ -15,6 +15,10 @@ import market.item.Item;
  */
 public class Utils {
 
+	private Utils() {
+		throw new IllegalAccessError("Utility class");
+	}
+
 	private static NumberFormat format = NumberFormat.getCurrencyInstance();
 	private static String spaces100 = "                                                                                                    ";
 	private static String bottom100 = "---------------------------------------------------------------------------------------------------";
