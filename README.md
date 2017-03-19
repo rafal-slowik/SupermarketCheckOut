@@ -1,6 +1,6 @@
 <h1>Supermarket checkout system supporting special price rules.</h1>
 
-<p><font size="3" color="red">Important: Each items in the basket can be taken as a part of special price rule ONLY once.</font></p>
+<p><font size="3" color="red">Important: Each item in the basket can be taken as a part of special price rule ONLY once.</font></p>
 
 To implementation used JDK 8.<BR><BR>
 To check out the project use following command: <br />
